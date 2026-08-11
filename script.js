@@ -12,6 +12,13 @@ document.querySelector('#year').textContent = new Date().getFullYear();
 
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
+const desktopActions = document.querySelector('.header-actions');
+if (nav && desktopActions) {
+  const mobileActions = desktopActions.cloneNode(true);
+  mobileActions.classList.add('mobile-menu-actions');
+  nav.append(mobileActions);
+}
+
 menuButton?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', String(isOpen));
