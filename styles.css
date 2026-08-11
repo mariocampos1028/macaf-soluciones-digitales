@@ -1,4 +1,4 @@
-.mobile-menu-actions{display:none}
+.mobile-menu-actions{display:none!important}
 @media(max-width:1180px){
   .main-nav.open .mobile-menu-actions{display:flex!important;align-items:center;gap:14px;margin-top:8px;padding-top:16px;border-top:1px solid #e7ecea}
   .main-nav.open .mobile-menu-actions .login-link{padding:10px 0}
